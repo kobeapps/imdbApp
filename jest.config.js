@@ -5,8 +5,8 @@ module.exports = {
 		"^.*(.js)$": "babel-jest"
 	},
 	transformIgnorePatterns: [
-		"node_modules/(?!react-native|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)",
-		"node_modules/@react-native-community/async-storage/(?!(lib))"
+		"node_modules/(?!react-native|@react-native-community/async-storage|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)"
+//		"node_modules/@react-native-community/async-storage/(?!(lib))"
     ],
 	testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
 	testPathIgnorePatterns: ["\\.snap$", "<rootDir>/node_modules/", "<rootDir>/lib/"],

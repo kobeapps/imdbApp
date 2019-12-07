@@ -1,10 +1,11 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 import {Button} from 'native-base';
+import renderer from 'react-test-renderer';
+
 import {Movie} from '../src/components/Movie';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+jest.mock('@react-native-community/async-storage');
 
 it('renders correctly', () => {
   renderer.create(<Movie />);
