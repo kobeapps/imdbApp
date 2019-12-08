@@ -14,18 +14,18 @@ export default {
 			}
 		});
 	}),
-  removeItem: (key) => {
+  removeItem: jest.fn((key) => {
     return new Promise((resolve, reject) => {
       return cache.hasOwnProperty(key)
         ? resolve(delete cache[key])
         : reject('No such key!');
     });
-  },
-  clear: (key) => {
+  }),
+  clear: jest.fn((key) => {
     return new Promise((resolve, reject) => resolve(cache = {}));
-  },
+  }),
 
-  getAllKeys: (key) => {
+  getAllKeys: jest.fn((key) => {
     return new Promise((resolve, reject) => resolve(Object.keys(cache)));
-  },
+  }),
 }
