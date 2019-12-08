@@ -2,7 +2,7 @@ import React from 'react';
 import {Image} from 'react-native';
 import {Card, CardItem, Text, Left, Body, Right} from 'native-base';
 
-const DetailsCard = ({movieDetails}) => <Card>
+export const DetailsCard = ({movieDetails}) => <Card>
     <CardItem>
         <Text>{movieDetails.Title}</Text>
     </CardItem>
@@ -32,6 +32,4 @@ const DetailsCard = ({movieDetails}) => <Card>
             {movieDetails.Plot}
         </Text>
     </CardItem>
-</Card>
-
-export default DetailsCard
+</Card>;
