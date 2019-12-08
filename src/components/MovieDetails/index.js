@@ -4,7 +4,7 @@ import { Container, Content, Button } from 'native-base';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
 
-import DetailsCard from './DetailsCard';
+import {DetailsCard} from './DetailsCard';
 import { getMovieDetailsById } from '../../actions';
 
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Container, Content, Button, Text} from 'native-base';
 import {storeData} from '../../utils/AsyncStorage';
-import {addOrRemoveHelper} from '../../utils/addOrRemove';
+import {addOrRemoveHelper} from '../../utils/addOrRemoveHelper';
 
 import SearchBar from './SearchBar';
 import MovieList from './MovieList';
@@ -68,6 +68,7 @@ export class Movie extends Component {
     async addOrRemoveFF(movie) {
         const favourites = await addOrRemoveHelper(movie);
         this.setState({favourites});
+        return favourites;
     }
 
     render() {

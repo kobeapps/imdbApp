@@ -3,7 +3,7 @@ import {Container, Left, Body, Right, Title, Content, Item, List, ListItem, Butt
 
 import {getData} from '../../utils/AsyncStorage';
 import AddOrRemove from './AddOrRemove';
-import {addOrRemoveHelper} from '../../utils/addOrRemove';
+import {addOrRemoveHelper} from '../../utils/addOrRemoveHelper';
 
 class FavouriteList extends Component {
 
@@ -61,7 +61,8 @@ class FavouriteList extends Component {
                                 <Right>
                                     <AddOrRemove movie={favourites[imdbID]} addOrRemoveFF={this.addOrRemoveFF} favourites={favourites} />
                                 </Right>
-                            </ListItem>)}
+                            </ListItem>)
+                        }
                         </List>
                     </Content>
         </Container>

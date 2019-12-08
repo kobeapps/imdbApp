@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 jest.mock('@react-native-community/async-storage');
 
-import { storeData, getData, printAsyncStorage } from '../src/utils/AsyncStorage';
+import { storeData, getData } from '../src/utils/AsyncStorage';
 
 const mockReturnValues = {
     mockObject: {
